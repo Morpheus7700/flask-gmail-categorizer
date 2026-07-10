@@ -1,24 +1,24 @@
-# EmailAI Smart Categorizer 📧
+# EmailAI-Smart-Categorizer
 
-A lightweight, intelligent Flask web application that seamlessly integrates with your Gmail account to automatically categorize and organize your inbox.
+> A Flask web app that connects to Gmail via OAuth 2.0 and sorts your inbox into categories.
 
-## 🚀 Features
-- **Secure Google Authentication:** Uses OAuth 2.0 to securely connect to your Gmail account.
-- **Automated Categorization:** Analyzes email headers and snippets to sort emails into meaningful categories.
-- **Clean Dashboard:** A simple, intuitive web interface to view and manage categorized emails.
+A lightweight web application that authenticates against a user's Gmail account, reads message headers and snippets, and groups emails into meaningful categories in a simple dashboard.
 
-## 🛠️ Tech Stack
-- **Backend:** Python, Flask, Google API Client
-- **Frontend:** HTML5, CSS3, JavaScript
+## Features
+- Secure Google sign-in with OAuth 2.0
+- Automatic categorisation from email headers and snippets
+- Clean web dashboard to review sorted mail
+- Ready to deploy (includes a `vercel.json` configuration)
+
+## Tech Stack
+- **Backend:** Python, Flask, Google API Python Client
 - **Auth:** Google OAuth 2.0 (`google-auth-oauthlib`)
+- **Frontend:** HTML, CSS, vanilla JavaScript
 
-## ⚙️ Setup
-1. Configure your Google Cloud Project and download OAuth credentials to the project root.
-2. Install dependencies:
+## Getting Started
+1. Create a Google Cloud project and download OAuth client credentials into the project root.
+2. Install dependencies and run:
    ```bash
    pip install -r requirements.txt
-   ```
-3. Run the app:
-   ```bash
    python main.py
    ```
