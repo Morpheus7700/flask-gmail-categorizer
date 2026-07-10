@@ -1,4 +1,4 @@
-# EmailAI-Smart-Categorizer
+﻿# Flask Gmail Categorizer
 
 > A Flask web app that connects to Gmail via OAuth 2.0 and sorts your inbox into categories.
 
